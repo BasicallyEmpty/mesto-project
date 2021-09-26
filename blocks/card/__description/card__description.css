@@ -1,0 +1,10 @@
+.card__description {
+    margin: 0;
+    display: flex;
+    width: 282px;
+    height: 79px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+}

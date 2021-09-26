@@ -1,0 +1,7 @@
+.header__line {
+    margin: 0 0 36px;
+    min-width: 100%;
+    height: 0;
+    border: 1px #545454 solid;
+    align-self: flex-end;
+}

@@ -1,0 +1,8 @@
+.cards {
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr)); /* реализован перенос элементов сетки при сжатии окна */
+    gap: 20px 17px;
+}

@@ -1,0 +1,30 @@
+@import url(../vendor/normalize.css); /* импорт нормализации */
+@import url(../vendor/fonts.css); /*импорт шрифтов*/
+
+/*ниже импорт блоков*/
+@import url(../blocks/page/page.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/content/content.css);
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/cards/cards.css);
+@import url(../blocks/card/card.css);
+@import url(../blocks/footer/footer.css);
+
+/*ниже импорт элементов*/
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__line/header__line.css);
+@import url(../blocks/profile/__avatar/profile__avatar.css);
+@import url(../blocks/profile/__profile-info/profile__profile-info.css);
+@import url(../blocks/profile/__name-wrapper/profile__name-wrapper.css);
+@import url(../blocks/profile/__name/profile__name.css);
+@import url(../blocks/profile/__description/profile__description.css);
+@import url(../blocks/profile/__edit-button/profile__edit-button.css);
+@import url(../blocks/profile/__add-button/profile__add-button.css);
+@import url(../blocks/card/__image/card__image.css);
+@import url(../blocks/card/__description/card__description.css);
+@import url(../blocks/card/__description-text/card__description-text.css);
+@import url(../blocks/card/__like-button/card__like-button.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+
+/*ниже импорт модификаторов*/
+@import url(../blocks/card/__like-button/_active/card__likebutton_active.css);
