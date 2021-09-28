@@ -1,0 +1,11 @@
+.form__item {
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.form__item::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+}

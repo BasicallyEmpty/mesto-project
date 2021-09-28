@@ -1,7 +1,15 @@
 .profile__profile-info {
-    margin: 0;
-    padding: 0;
-    width: calc(100% - 127px - 150px - 42px);
-    display: flex;
-    flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: calc(100% - 127px - 150px - 42px);
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 700px) {
+  .profile__profile-info {
+    margin: auto;
+    width: 100%;
+    align-items: center;
+  }
 }

@@ -9,8 +9,9 @@
     background-size: 22px 22px;
     transition: .1s;
     border: none;
+    box-sizing: border-box;
 }
 
 .card__like-button:hover {
-    opacity: 0.6;
+    opacity: .5;
 }
