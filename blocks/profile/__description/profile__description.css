@@ -3,8 +3,8 @@
   font-size: 18px;
   line-height: 22px;
   color: #fff;
-  text-overflow: ellipsis;
   max-width: 500px;
+  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
