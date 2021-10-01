@@ -12,62 +12,60 @@
 <body class="page">
   <header class="header">
     <img src="images/mesto-logo.svg" alt="Логотип Место." class="header__logo">
-    <div class="header__line"></div>
   </header>
   <main class="content">
-    <div class="page__space"></div>
-    <section class="profile" aria-label="Профиль">
+    <section class="profile page__space" aria-label="Профиль">
       <img src="images/avatar.jpg" alt="Аватар." class="profile__avatar">
       <div class="profile__profile-info">
         <div class="profile__name-wrapper">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
-          <button class="profile__edit-button" type="button"></button>
+          <button class="profile__edit-button" type="button" aria-label="Редактировать"></button>
         </div>
         <p class="profile__description">Исследователь океана</p>
       </div>
-      <button class="profile__add-button" type="button"></button>
+      <button class="profile__add-button" type="button" aria-label="Добавить"></button>
     </section>
     <section class="cards" aria-label="Фотографии">
       <article class="card">
         <img src="images/1.jpg" alt="Руины замка в горах." class="card__image">
         <div class="card__description">
           <h2 class="card__description-text">Карачаево-Черкессия</h2>
-          <button class="card__like-button" type="button"></button>
+          <button class="card__like-button" type="button" aria-label="Понравилось"></button>
         </div>
       </article>
       <article class="card">
         <img src="images/2.jpg" alt="Поле на фоне горы." class="card__image">
         <div class="card__description">
           <h2 class="card__description-text">Гора Эльбрус</h2>
-          <button class="card__like-button card__like-button_active" type="button"></button>
+          <button class="card__like-button card__like-button_active" type="button" aria-label="Понравилось"></button>
         </div>
       </article>
       <article class="card">
         <img src="images/3.jpg" alt="Лес на фоне горной цепи." class="card__image">
         <div class="card__description">
           <h2 class="card__description-text">Домбай</h2>
-          <button class="card__like-button" type="button"></button>
+          <button class="card__like-button" type="button" aria-label="Понравилось"></button>
         </div>
       </article>
       <article class="card">
         <img src="images/4.jpg" alt="Пейзаж Большого Каньона." class="card__image">
         <div class="card__description">
           <h2 class="card__description-text">Большой Каньон</h2>
-          <button class="card__like-button card__like-button_active" type="button"></button>
+          <button class="card__like-button card__like-button_active" type="button" aria-label="Понравилось"></button>
         </div>
       </article>
       <article class="card">
         <img src="images/5.jpg" alt="Рассвет в заснеженных горах." class="card__image">
         <div class="card__description">
           <h2 class="card__description-text">Аляска</h2>
-          <button class="card__like-button" type="button"></button>
+          <button class="card__like-button" type="button" aria-label="Понравилось"></button>
         </div>
       </article>
       <article class="card">
         <img src="images/6.jpg" alt="Переходящие в равнины горы." class="card__image">
         <div class="card__description">
           <h2 class="card__description-text">Шотландия</h2>
-          <button class="card__like-button card__like-button_active" type="button"></button>
+          <button class="card__like-button card__like-button_active" type="button" aria-label="Понравилось"></button>
         </div>
       </article>
     </section>
@@ -75,15 +73,15 @@
   <footer class="footer">
     <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
   </footer>
-  <div class="popup popup_active">
+  <div class="popup ">
     <div class="popup__container">
-      <button class="popup__close-button" type="button"></button>
+      <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
       <form class="form" name="edit-profile">
         <h2 class="form__heading">Редактировать профиль</h2>
         <fieldset class="form__input-container">
           <input class="form__item" type="text" id="name" name="name" placeholder="Имя" required value="Жак-Ив Кусто">
           <input class="form__item" type="text" id="description" name="description" placeholder="Описание" required value="Исследователь океана">
-          <button class="form__save-button" type="submit">Сохранить</button>
+          <button class="form__save-button" type="submit" aria-label="Отправить">Сохранить</button>
         </fieldset>
       </form>
     </div>
