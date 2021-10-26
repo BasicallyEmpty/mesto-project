@@ -26,14 +26,20 @@
 @import url(../blocks/card/__description/card__description.css);
 @import url(../blocks/card/__description-text/card__description-text.css);
 @import url(../blocks/card/__like-button/card__like-button.css);
+@import url(../blocks/card/__remove-button/card__remove-button.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__close-button/popup__close-button.css);
+@import url(../blocks/popup/__image-container/popup__image-container.css);
+@import url(../blocks/popup/__image/popup__image.css);
+@import url(../blocks/popup/__caption/popup__caption.css);
 @import url(../blocks/form/__heading/form__heading.css);
 @import url(../blocks/form/__input-container/form__input-container.css);
 @import url(../blocks/form/__item/form__item.css);
 @import url(../blocks/form/__save-button/form__save-button.css);
 @import url(../blocks/footer/__copyright/footer__copyright.css);
+@import url(../blocks/popup/__image-container/popup__image-container.css);
 
 /*ниже импорт модификаторов*/
 @import url(../blocks/card/__like-button/_active/card__like-button_active.css);
 @import url(../blocks/popup/_active/popup_active.css);
+@import url(../blocks/popup/_type/popup_type_image.css);
