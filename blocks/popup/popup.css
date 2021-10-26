@@ -1,7 +1,10 @@
 .popup {
   margin: 0;
   padding: 0;
-  display: none;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s linear;
   position: fixed;
   width: 100vw;
   height: 100vh;

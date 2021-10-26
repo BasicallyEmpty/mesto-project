@@ -26,66 +26,60 @@
       <button class="profile__add-button" type="button" aria-label="Добавить"></button>
     </section>
     <section class="cards" aria-label="Фотографии">
-      <article class="card">
-        <img src="images/1.jpg" alt="Руины замка в горах." class="card__image">
-        <div class="card__description">
-          <h2 class="card__description-text">Карачаево-Черкессия</h2>
-          <button class="card__like-button" type="button" aria-label="Понравилось"></button>
-        </div>
-      </article>
-      <article class="card">
-        <img src="images/2.jpg" alt="Поле на фоне горы." class="card__image">
-        <div class="card__description">
-          <h2 class="card__description-text">Гора Эльбрус</h2>
-          <button class="card__like-button card__like-button_active" type="button" aria-label="Понравилось"></button>
-        </div>
-      </article>
-      <article class="card">
-        <img src="images/3.jpg" alt="Лес на фоне горной цепи." class="card__image">
-        <div class="card__description">
-          <h2 class="card__description-text">Домбай</h2>
-          <button class="card__like-button" type="button" aria-label="Понравилось"></button>
-        </div>
-      </article>
-      <article class="card">
-        <img src="images/4.jpg" alt="Пейзаж Большого Каньона." class="card__image">
-        <div class="card__description">
-          <h2 class="card__description-text">Большой Каньон</h2>
-          <button class="card__like-button card__like-button_active" type="button" aria-label="Понравилось"></button>
-        </div>
-      </article>
-      <article class="card">
-        <img src="images/5.jpg" alt="Рассвет в заснеженных горах." class="card__image">
-        <div class="card__description">
-          <h2 class="card__description-text">Аляска</h2>
-          <button class="card__like-button" type="button" aria-label="Понравилось"></button>
-        </div>
-      </article>
-      <article class="card">
-        <img src="images/6.jpg" alt="Переходящие в равнины горы." class="card__image">
-        <div class="card__description">
-          <h2 class="card__description-text">Шотландия</h2>
-          <button class="card__like-button card__like-button_active" type="button" aria-label="Понравилось"></button>
-        </div>
-      </article>
     </section>
   </main>
   <footer class="footer">
     <p class="footer__copyright">&copy; 2021 Mesto Russia</p>
   </footer>
-  <div class="popup ">
+
+  <div class="popup popup_type_edit">
     <div class="popup__container">
       <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
-      <form class="form" name="edit-profile">
+      <form class="form form_type_edit" name="edit-profile">
         <h2 class="form__heading">Редактировать профиль</h2>
         <fieldset class="form__input-container">
-          <input class="form__item" type="text" id="name" name="name" placeholder="Имя" required value="Жак-Ив Кусто">
-          <input class="form__item" type="text" id="description" name="description" placeholder="Описание" required value="Исследователь океана">
+          <input class="form__item" type="text" id="name" name="name" placeholder="Имя" required>
+          <input class="form__item" type="text" id="description" name="description" placeholder="Описание" required>
           <button class="form__save-button" type="submit" aria-label="Отправить">Сохранить</button>
         </fieldset>
       </form>
     </div>
   </div>
+  <div class="popup popup_type_add">
+    <div class="popup__container">
+      <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+      <form class="form form_type_add" name="add-place">
+        <h2 class="form__heading">Новое место</h2>
+        <fieldset class="form__input-container">
+          <input class="form__item" type="text" id="name" name="name" placeholder="Название" required>
+          <input class="form__item" type="text" id="link" name="link" placeholder="Ссылка на картинку" required>
+          <button class="form__save-button" type="submit" aria-label="Создать">Создать</button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <div class="popup popup_type_image">
+    <figure class="popup__image-container">
+      <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+      <img class="popup__image" src="" alt="">
+      <figcaption class="popup__caption"></figcaption>
+    </figure>
+  </div>
+
+  <template id="card-template">
+    <article class="card">
+      <img src="" alt="" class="card__image">
+      <button class="card__remove-button" type="button" aria-label="Удалить"></button>
+      <div class="card__description">
+        <h2 class="card__description-text"></h2>
+        <button class="card__like-button" type="button" aria-label="Понравилось"></button>
+      </div>
+    </article>
+  </template>
+
+  <script src="scripts/cards.js"></script>
+  <script src="scripts/index.js"></script>
+
 </body>
 
 </html>
