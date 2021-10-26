@@ -41,11 +41,10 @@ function createCard(name, link) {
   cardDesc.textContent = name;
 
   cardImage.addEventListener('click', function(evt) {
-    const eventTarget = evt.target;
     const popupImage = document.querySelector('.popup__image');
     const popupCaption = document.querySelector('.popup__caption');
 
-    popupImage.src = eventTarget.src;
+    popupImage.src = link;
     popupCaption.textContent = name;
 
     openPopup(popupTypeImage);
