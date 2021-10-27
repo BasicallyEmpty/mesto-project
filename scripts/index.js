@@ -11,7 +11,7 @@ const formEdit = document.querySelector('.form_type_edit');
 const nameInput = formEdit.querySelector('#name');
 const jobInput = formEdit.querySelector('#description');
 const formAdd = document.querySelector('.form_type_add');
-const cards = document.querySelector('.cards');
+const cardsContainer = document.querySelector('.cards');
 
 function openPopup(el) {
   el.classList.add('popup_active');
@@ -26,6 +26,10 @@ function formEditSubmitHandler (evt) {
   profName.textContent = nameInput.value;
   profDesc.textContent = jobInput.value;
   closePopup(popupTypeEdit);
+}
+
+function addCard(container, card) {
+  container.prepend(card);
 }
 
 function createCard(name, link) {
@@ -45,6 +49,7 @@ function createCard(name, link) {
     const popupCaption = document.querySelector('.popup__caption');
 
     popupImage.src = link;
+    popupImage.alt = name;
     popupCaption.textContent = name;
 
     openPopup(popupTypeImage);
@@ -60,7 +65,7 @@ function createCard(name, link) {
     eventTarget.closest('.card').remove();
   })
 
-  cards.append(cardElement);
+  return cardElement;
 }
 
 function formAddSubmitListener(evt){
@@ -68,15 +73,14 @@ function formAddSubmitListener(evt){
   const placeName = formAdd.querySelector('#name');
   const placeLink = formAdd.querySelector('#link');
 
-  createCard(placeName.value, placeLink.value);
+  addCard(cardsContainer, createCard(placeName.value, placeLink.value));
   closePopup(popupTypeAdd);
-  placeName.value = '';
-  placeLink.value = '';
+  formAdd.reset();
 }
 
 function initializeCards(list) {
   list.forEach((item) => {
-    createCard(item.name, item.link);
+    addCard(cardsContainer, (createCard(item.name, item.link)));
   })
 }
 

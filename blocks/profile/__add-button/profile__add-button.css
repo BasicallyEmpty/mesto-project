@@ -13,6 +13,7 @@
   background-size: 22px 22px;
   transition: 0.1s;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .profile__add-button:hover {
